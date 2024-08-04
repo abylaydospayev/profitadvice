@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand img {
+    transition: transform 0.5s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    padding: 2rem 1rem;
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    color: #34495e;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-content {
+    background-color: rgba(52, 152, 219, 0.1); /* Transparent blue */
+    border-radius: 15px;
+    padding: 3em 2em;
+    margin-bottom: 4em;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.1);
+    transition: all 0.5s ease;
+    width: 80%; /* Fixed width */
+    max-width: 600px; /* Maximum width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-content:hover {
+    background-color: rgba(52, 152, 219, 0.15);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #3498db;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Styling for the Get Advice button */
+.text-center.mt-4.mb-5 {
+    margin-top: 2rem;
+}
+
+.btn-primary.btn-lg {
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+.btn-primary.btn-lg:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Adjust carousel height to make room for the button */
+#featuresCarousel {
+    margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+    .feature-content {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .btn-primary.btn-lg {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
